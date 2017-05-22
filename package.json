@@ -1,5 +1,5 @@
 {
-  "name": "xxi",
+  "name": "list",
   "version": "1.0.0",
   "description": "list of items",
   "main": "server.js",
@@ -13,8 +13,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harmonsoftwaresolutions/List.git"
-  },
+    "url": "https://github.com/harmonsoftwaresolutions/List"
+},
   "author": "Laurel Herting",
   "devDependencies": {
     "eslint": "^3.17.1",
