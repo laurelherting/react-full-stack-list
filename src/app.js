@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.scss';
+import LoginForm from './LoginForm';
 
 const items = [
   {
