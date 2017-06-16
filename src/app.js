@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 import './index.scss';
 
+const items = [
+  {
+    id: 1,
+    active: true,
+    popularname: 'hedgehog',
+    scientificname: 'Erinaceinae',
+  },
+  {
+    id: 2,
+    active: true,
+    popularname: 'cat',
+    scientificname: 'Felis catus',
+  },
+  {
+    id: 3,
+    active: false,
+    popularname: 'tiger',
+    scientificname: 'Panthera tigris',
+  },
+];
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -12,43 +33,19 @@ class App extends Component {
   render() {
     return (
       <div>
-      <section>
-      <p>this is a list of animals</p>
-      </section>
-      <input type="button" onClick={() => this.onButton()} />
+        <section>
+          <p>this is a list of animals</p>
+        </section>
+        <input type="button" onClick={() => this.onButton()} />
+        <ul>
+          {items.map((x) => (
+            <li key={x.id}>{x.popularname} : {x.scientificname}</li>
+            ),
+          )}
+        </ul>
       </div>
     );
   }
 }
-
-const items = [
-  {
-    active: true,
-    popularname: 'hedgehog',
-    scientificname: 'Erinaceinae'
-  },
-  {
-    active: true,
-    popularname: 'cat',
-    scientificname: 'Felis catus'
-  },
-  {
-    active: false,
-    popularname: 'tiger',
-    scientificname: 'Panthera tigris'
-  }
-];
-
-const mapped = items
-  .filter(x => x.active) //
-  .map(x => x.popularname); // ['Shane', 'Sally']
-
-console.log("true");
-function createHtmlList(items) {
-  const listElements = items.map(x => <li>${x}</li>).join('\n');
-  return <ul>\n${listElements}\n</ul>;
-}
-
-createHtmlList(mapped);
 
 export default App;
