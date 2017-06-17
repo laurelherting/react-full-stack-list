@@ -34,11 +34,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="App">
-            <h2>Hedgehogs Rock!</h2>
-        </div>
+       <div className="header">
+          <img src="https://oup.useremarkable.com/production/images/uploads/2315/original/baby-hedgehog.jpg?147195945" alt="hedgehog" />
+           <h2>Hedgehogs Rock!</h2>
+       </div>
           <section>
-            <p>Here is a list of my favorite animals</p>
+            <p>Here is a list of my favorite animals scroll right-></p>
           </section>
           <input type="button" onClick={() => this.onButton()} />
         <ul>
