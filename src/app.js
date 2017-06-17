@@ -34,10 +34,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <section>
-          <p>this is a list of animals</p>
-        </section>
-        <input type="button" onClick={() => this.onButton()} />
+        <div className="App">
+            <h2>Hedgehogs Rock!</h2>
+        </div>
+          <section>
+            <p>Here is a list of my favorite animals</p>
+          </section>
+          <input type="button" onClick={() => this.onButton()} />
         <ul>
           {items.map((x) => (
             <li key={x.id}>{x.popularname} : {x.scientificname}</li>
