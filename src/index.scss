@@ -1,6 +1,23 @@
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 body {
   margin: auto;
   font-family: monospace;
+}
+
+h2 {
+  text-align: justify;
 }
 
 .App {
@@ -12,4 +29,29 @@ body {
   height: 150px;
   padding: 20px;
   color: white;
+}
+
+section:nth-of-type(1) {
+  background-image: url('https://oup.useremarkable.com/production/images/uploads/2315/original/baby-hedgehog.jpg?1471959458')
+}
+
+section:nth-of-type(2) {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/3c/20/63/3c2063499d5371f1212f1050d5577041.jpg')
+}
+    
+section:nth-of-type(3) {
+  background-image: url('http://i.imgur.com/gbwgfw6.jpg')
+}
+ 
+p {
+  margin: 0;
+  font-size: 2rem;
+  padding: 0 5rem;
+  text-shadow: 1px 1px #333;
+  color: #fff;
+  }
+
+items.map {
+  color: green;
+  
 }
