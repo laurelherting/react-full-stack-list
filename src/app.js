@@ -43,7 +43,7 @@ class App extends Component {
           <section>
             <p>Check out the list below to see my favorite animals!</p>
           </section>
-          <input type="button" onClick={() => this.onButton()} />
+          <input type="button" value="Click hereto learn more" onClick={() => this.onButton()} />
         <ul>
           {items.map((x) => (
             <li key={x.id}>{x.popularname} : {x.scientificname}</li>
