@@ -15,7 +15,7 @@ SCSS: Sass 3 introduces a new syntax known as SCSS which is fully compatible wit
 ______________________
 
 Getting started:
-Clone this repo using git clone.
+Clone this repo using git clone with HTTPS: https://github.com/harmonsoftwaresolutions/List.git 
 
 Run npm install to install the dependencies.
 
