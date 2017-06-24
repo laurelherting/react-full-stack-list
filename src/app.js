@@ -53,10 +53,11 @@ class App extends Component {
         <section>
           <p>Now it's your turn to add your favorite animals!</p>
         </section>
-      // list of items to add goes here
       </div>
     );
   }
 }
+
+/* list of items to add goes here */
 
 export default App;
