@@ -13,7 +13,11 @@ body {
   height: 150px;
   padding: 20px;
   color: white;
+}
 
+h2 {
+  text-align: center;
+  font-family: 'Patrick Hand SC', cursive;
 }
 
 .blink {
@@ -28,4 +32,10 @@ section#loginBox {
   margin: 40px auto; /*aligns center*/
   padding: 40px;
   width: 500px;
+}
+
+form {
+  text-align:center;
+  vertical-align:middle;
+  -webkit-box-align: center;
 }
