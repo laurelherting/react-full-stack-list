@@ -53,6 +53,7 @@ class App extends Component {
         <section>
           <p>Now it's your turn to add your favorite animals!</p>
         </section>
+          <LoginForm />
       </div>
     );
   }
