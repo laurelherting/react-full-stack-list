@@ -1,5 +1,5 @@
 # List
-List of items
+List of animals
 
 Intent to show:
 1. List of items (animals) in bullet form
