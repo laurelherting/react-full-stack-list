@@ -1,7 +1,7 @@
 {
   "name": "popout",
   "version": "1.0.0",
-  "description": "list of items",
+  "description": "list of animals",
   "main": "server.js",
   "private": "true",
   "scripts": {
@@ -62,7 +62,7 @@
   "keywords": [
     "list",
     "of",
-    "items"
+    "animals"
   ],
   "license": "ISC"
 }
