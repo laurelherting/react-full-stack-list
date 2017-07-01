@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './index.scss';
 import LoginForm from './LoginForm';
-import Popupbox from './Popupbox';
 
 const items = [
   {
@@ -45,7 +44,6 @@ class App extends Component {
           <section>
             <p>Check out the list below to see my favorite animals!</p>
           </section>
-          <Popupbox />
         <ul>
           {items.map((x) => (
             <li key={x.id}>{x.popularname} : {x.scientificname}</li>
