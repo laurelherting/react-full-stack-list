@@ -27,10 +27,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.onButton = this.onButton.bind(this);
+    this.state = { message:"" }; 
   }
   onButton() {
     console.log('Animal');
+    this.setState({ message: "User not logged in" });
   }
+
   render() {
     return (
       <div>
@@ -42,6 +45,8 @@ class App extends Component {
        </div>
           <input type="button" value="Click here for more" onClick={() => this.onButton()} />
           <section>
+
+      <h3>{this.state.message}</h3>
             <p>Check out the list below to see my favorite animals!</p>
           </section>
         <ul>
@@ -53,7 +58,7 @@ class App extends Component {
         <section>
           <p>Now it's your turn to add your favorite animals!</p>
         </section>
-          <LoginForm />
+      <LoginForm />
       </div>
     );
   }
