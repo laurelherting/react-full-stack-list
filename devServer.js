@@ -5,7 +5,7 @@ import Express from 'express';
 import config from './webpack.base.config.babel';
 
 const app = new Express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const compiler = webpack(config);
 

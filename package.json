@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "list of animals",
   "main": "server.js",
-  "private": "true",
+  "engines": {
+  "node": "8.9.1",
+  "npm": "5.5.1"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "start": "babel-node devServer.js",
