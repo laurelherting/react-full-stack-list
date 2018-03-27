@@ -31,7 +31,7 @@ app.listen(port, (error) => {
     console.error(error);
   } else {
     console.info(
-      '🌎 Listenig on port %s. Open up http://localhost:%s/ in your browser.',
+      '🌎 Listeing on port %s. Open up http://localhost:%s/ in your browser.',
       port,
       port,
     );

@@ -2,7 +2,7 @@ const path = require('path');
 const Express = require('express');
 
 const app = new Express();
-const port = 3000;
+const port = process.env.port || 3000;
 
 app.use(Express.static(path.resolve(__dirname, 'dist')));
 app.use('/', (req, res) => {
@@ -17,7 +17,7 @@ app.listen(port, (error) => {
   } else {
     console.info(
       '🌎 Listening on port %s.',
-      port
+      port,
     );
   }
   // eslint-enable-line no-console
