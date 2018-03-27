@@ -4,8 +4,9 @@
   "description": "list of animals",
   "main": "server.js",
   "engines": {
-  "node": "8.9.1",
-  "npm": "5.5.1"
+    "node": "8.9.1",
+    "npm": "5.5.1",
+    "yarn": "1.5.1"
   },
   "scripts": {
     "predeploy": "npm run build",

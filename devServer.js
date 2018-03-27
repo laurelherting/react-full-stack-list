@@ -5,7 +5,7 @@ import Express from 'express';
 import config from './webpack.base.config.babel';
 
 const app = new Express();
-const port = process.env.PORT || 3000;
+const port = process.env.port || 3000;
 
 const compiler = webpack(config);
 
@@ -31,7 +31,7 @@ app.listen(port, (error) => {
     console.error(error);
   } else {
     console.info(
-      '🌎 Listening on port %s. Open up http://localhost:%s/ in your browser.',
+      '🌎 Listeningport %s. Open up http://localhost:%s/ in your browser.',
       port,
       port,
     );
