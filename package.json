@@ -1,7 +1,7 @@
 {
   "name": "react-full-stack-list",
   "version": "1.0.0",
-  "description": "list of animals",
+  "description": "list of animals: scroll-down",
   "main": "server.js",
   "engines": {
     "node": "8.9.1",
