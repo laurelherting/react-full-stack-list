@@ -5,7 +5,7 @@ import Express from 'express';
 import config from './webpack.base.config.babel';
 
 const app = new Express();
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 const compiler = webpack(config);
 
@@ -14,7 +14,7 @@ app.use(webpackDevMiddleware(compiler, {
   publicPath: config.output.publicPath,
 }));
 
-app.use('*', (req, res, next) => {
+app.get('*', (req, res, next) => {
   const filename = path.join(compiler.outputPath, 'index.html');
   compiler.outputFileSystem.readFile(filename, (err, result) => {
     if (err) next(err);
@@ -25,15 +25,15 @@ app.use('*', (req, res, next) => {
   });
 });
 
-app.listen(port, (error) => {
+app.listen(PORT, (error) => {
   /* eslint-disable no-console */
   if (error) {
     console.error(error);
   } else {
     console.info(
-      '🌎Listening on port %s. Open up http://localhost:%s/ in your browser.',
-      port,
-      port,
+      '🌎Listenig on PORT %s. Open up http://localhost:%s/ in your browser.',
+      PORT,
+      PORT,
     );
   }
   /* eslint-enable no-console */
