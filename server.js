@@ -3,7 +3,6 @@ const Express = require('express');
 
 const app = new Express();
 const PORT = process.env.PORT || 3000;
- 
 app.use(Express.static(path.resolve(__dirname, 'dist')));
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
@@ -16,7 +15,7 @@ app.listen(PORT, (error) => {
     console.error(error);
   } else {
     console.info(
-      '🌎 Listening n PORT %s.',
+      '🌎Listening on PORT %s.',
       PORT,
     );
   }
