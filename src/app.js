@@ -55,7 +55,7 @@ class App extends Component {
           )}
         </ul>
         <section>
-          <p>Login below to add your favorite animals!</p>
+          <p>Log in below to add your favorite animals!</p>
         </section>
         <LoginForm />
       </div>
