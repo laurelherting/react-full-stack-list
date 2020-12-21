@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React { Component } from 'react';
 import './index.scss';
 import LoginForm from './loginForm';
 
@@ -27,7 +27,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.onButton = this.onButton.bind(this);
-    this.state = { message:"" }; 
+    this.state = { message:"" };
   }
   onButton() {
     console.log('Animal');
@@ -55,7 +55,7 @@ class App extends Component {
           )}
         </ul>
         <section>
-          <p>Log in below to add your favorite animals!</p>
+          <p>Sign in below to add your favorite animals!</p>
         </section>
         <LoginForm />
       </div>
