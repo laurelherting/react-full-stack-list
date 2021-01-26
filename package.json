@@ -45,7 +45,7 @@
     "file-loader": "^0.11.1",
     "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.28.0",
-    "node-sass": "^4.5.0",
+    "node-sass": "^4.13.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-popupbox": "^2.0.1",
